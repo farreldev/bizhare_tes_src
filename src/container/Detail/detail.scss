@@ -1,0 +1,102 @@
+.detail {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   // justify-content: center;
+   // align-items: center;
+   flex-direction: column;
+   .detailHeader {
+      padding: 0 15px;
+      width: 100%;
+      align-self: flex-start;
+      background-color: #21242B;
+      h4 {
+         // text-align: center;
+         text-transform: uppercase;
+         color: #B2B2B2;
+         letter-spacing: .7px;
+      }
+   }
+   .detailBody {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .panelBoxDetail {
+         padding: 25px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         max-width: 860px;
+         background-color: #23272F;
+         .top {
+            flex: 1;
+            display: flex;
+            figure {
+               position: relative;
+               // top: -50px;
+               // left: -50px;
+               display: inline-block;
+               margin: -80px 30px 25px -80px;
+               width: 300px;
+               height: 300px;
+               border-radius: 5px;
+               overflow: hidden;
+               box-shadow: 0 45px 45px -35px rgba(0,0,0, .55);
+               img {
+                  width: 100%;
+                  display: inline-block;
+               }
+            }
+            .fieldDetail {
+               flex: 1;
+               width: 100%;
+               display: flex;
+               justify-content: space-between;
+               .left, .right {
+                  flex: 1;
+               }
+               ul {
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+                  li {
+                     margin-bottom: 30px;
+                  }
+               }
+               strong {
+                  font-size: 19px;
+                  display: block;
+                  color: #A7ADB8;
+                  svg {
+                     margin-left: 7px;
+                  }
+               }
+               small {
+                  margin-bottom: 8px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  color: #707783;
+                  display: flex;
+                  align-items: center;
+               }
+            }
+         }
+         .description{
+            flex: 1;
+            strong, p {
+               color: #A7ADB8;
+            }
+            strong {
+               display: block;
+               margin-bottom: 10px;
+            }
+            p {
+               margin: 0;
+               line-height: 1.7;
+            }
+         }
+      }
+   }
+}

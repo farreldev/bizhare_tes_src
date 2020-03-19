@@ -1,5 +1,6 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Autocomplete from '../../components/Autocomplete';
+import './home.scss';
 import config from '../../config.js';
 
 class Home extends Component {
@@ -22,9 +23,9 @@ class Home extends Component {
    render() {
       const { locations } = this.state
       return (
-         <Fragment>
+         <div className="home">
             <Autocomplete listAutocomplete={ locations }/>
-         </Fragment>
+         </div>
       )
    }
 }
